@@ -5,7 +5,7 @@
 }
 
 body{
-    font-family: "Arial, Helvetica", sans-serif;
+    font-family: "Poppins", sans-serif;
     background-color: #bc4b1a;
 }
 /*HERO*/
@@ -13,50 +13,104 @@ body{
     height: 100vh;
 }
 header{
-    background-image: linear-gradient(rgba(120,60,20,0.7), rgba(40,20,10,0.8)),url("./img-1-coffe.jpg");
+    background-image: linear-gradient(rgba(120,60,20,0.7), rgba(40,20,10,0.8)),url("./img-1-1-coffee.jpg");
+    
     background-size: cover;
     background-position: center;
-    color:white;
-    justify-self: center;
-    padding: 300px 350px;
 
+    height: 90vh;
+    width: 90%;
+
+    position: relative;
+    margin: 50px auto;
+
+    color: white;
 }
-/*NAVBAR*/
-.navbar{
+.menu-superior{
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    top: 50px;
+    left: 120px;
+
+    width: 80%;
+}  
 .logo{
     font-size: 28px;
     font-weight: bold;
+    margin: 0;    
 }
-
-.menu:hover{
-    display: inline-block;
-    font-size: 28px;
-    color:white;
-    border: none;
-    gap: 30px;
+.icone{
+    margin-right: 10px;
+}
+ ul {
     list-style: none;
-    text-decoration: none;
-    transition: 0.3s;
-    cursor: pointer;
-    align-items:flex-start;
-}
-.hero-content{
-    margin-top: 140PX;
-    max-width: 500px;
+    display: flex;
+    gap:20px;
 }
 
+li a{
+   color:white;
+   text-decoration: none;
+   padding: 15px;
+}
+
+li a:hover {
+    background-color: #555;
+}
+
+.hero-content{
+    position: absolute;
+
+    top: 200px;
+    left: 195px;
+
+    max-width: 700px;
+}
+.destaque{
+    font-weight: 500;
+}
 .hero-content h2{
     font-size: 64px;
     line-height: 1.1;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    color: white;
+
+    font-weight: 100;
+
+    margin-left: 0;
+    padding-left: 0;
 }
 
 .hero-content p{
     color: #d3d3d3;
-    margin-bottom: 30px;
     line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 700px;
+
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.btn-primary{
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    margin-right: 15px;
+    font-size: 16px;
+
+    color: white;
+    background-color: rgba(242,135,64);
+}
+.btn-secondary{
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    margin-right: 15px;
+    font-size: 16px;
+
+    color: rgba(242,135,64);
+    background-color: white;
 }
