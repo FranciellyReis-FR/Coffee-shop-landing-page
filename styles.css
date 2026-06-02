@@ -18,11 +18,12 @@ header{
     background-size: cover;
     background-position: center;
 
-    height: 90vh;
+    height: 70vh;
     width: 90%;
+    object-fit: cover;
 
     position: relative;
-    margin: 50px auto;
+    margin: 50px auto 0 auto;
 
     color: white;
 }
@@ -113,4 +114,120 @@ li a:hover {
 
     color: rgba(242,135,64);
     background-color: white;
+}
+.skills{
+    background-color: white;
+
+    width: 90%;
+    margin: 0 auto;
+
+    padding: 80px 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.skills-text{
+    max-width: 500px;
+}
+.skills-text h2{
+    color: gray;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.skills-text h3{
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #222;
+}
+.skills-text p{
+    color:#666;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+.skills-img{
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+}
+.skills button{
+    padding: 15px 30px;
+    border: 1px solid  rgba(242,135,64);
+    background: white;
+    cursor: pointer;
+    color: rgba(242,135,64);
+}
+
+@media (max-width:768px){
+
+    header{
+        width: 100%;
+        height: auto;
+        padding: 40px 20px;
+}
+
+.menu-superior{
+    position: static;
+    width: 100%;
+
+    flex-direction: column;
+    gap:20px;
+
+    text-align: center;
+}
+
+ul{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hero-content{
+    position: static;
+
+    margin-top: 50px;
+    max-width: 100%;
+
+    text-align: left;
+
+    padding-left: 25px;
+    padding-right: 25px;
+    
+}
+
+.hero-content h2{
+    font-size: 40px;
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+}
+
+.hero-content p{
+    font-size: 16px;
+    line-height: 1.8;
+
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+.btn-primary, .btn-secondary{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.skills{
+    flex-direction: column;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.skills-img{
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+}
+
+.skills-text h3{
+    font-size: 32px;
+}
 }
